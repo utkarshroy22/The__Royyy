@@ -1,5 +1,4 @@
-# Complete Cricket Tournament Analyzer using Tuples
-# Har match: (match_name, team1_name, team2_name, team1_runs, team2_runs, winner_team)
+
 
 cricket_matches = (("ICC World Cup Final 2024", "India", "Australia", 250, 240,
                     "India"), ("ICC World Cup Semi Final 1", "India",
@@ -41,7 +40,6 @@ def get_team_statistics(all_matches, team_name):
     return wins_count, total_runs_scored
 
 
-# Main Tournament Analysis
 print("=== ICC World Cup 2024 Complete Tournament Report ===")
 
 print("All Matches Results:")
@@ -54,7 +52,6 @@ for match in cricket_matches:
     )
     print(f"  Winner: {winner_team} by {winning_margin} runs")
 
-# India ki complete statistics
 india_wins, india_total_runs = get_team_statistics(cricket_matches, "India")
 print("India Complete Statistics:")
 print(f"  Total Wins: {india_wins}")
